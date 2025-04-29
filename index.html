@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naweeda's Cinema</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
+
+</head>
+<body>
+ <section class="theater">
+    <h1>Naweeda's Cinema</h1>
+    <video controls>
+        <source src="media/trailer.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="buttons">
+        <button onclick="document.querySelector('video').currentTime=0; document.querySelector('video').play();">Play Again</button>
+<button onclick="alert('Thanks for rating!')">Rate movie</button>
+    </div>
+ </section>
+ <style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(#111, #333);
+        color: white;
+        font-family: 'Pacifico', cursive;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    .theater {
+border: 5px solid #ffcc00;
+padding: 30px;
+border-radius: 20px;
+box-shadow: 0 0 30px #ffcc00;
+text-align: center;
+background-color: #222;
+    }
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+    video {
+        width: 100%;
+        max-width: 600px;
+        border: 3px solid #ffcc00;
+        border-radius: 10px;
+        box-shadow: 0 0 20px #ffcc00;
+    }
+    .buttons {
+        margin-top: 20px;
+    }
+    .buttons button {
+background-color: #ffcc00;
+color: #222;
+border: none;
+padding: 10px 20px;
+margin: 5px;
+border-radius: 10px;
+font-size: 1rem;
+cursor: pointer;
+transition: background-color 0.3s;
+    }
+    .buttons button:hover {
+        background-color: #fa0;
+    }
+ </style>
+   
+</body>
+</html>
